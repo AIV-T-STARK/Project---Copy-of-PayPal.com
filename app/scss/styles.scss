@@ -1,0 +1,272 @@
+/*================
+= Project - Copy of PaPay
+= Author - Nguyen Gia Hao
+==================*/
+
+/* - Basic - */
+$color-custom: #0070ba !important;
+$color-btn-custom-hover: #0057ba !important;
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background: #fff;
+    color: #4a4a4a;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
+    margin: 0;
+}
+
+.title {
+    font-size: 30px;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #4a4a4a !important;
+}
+
+.text-custome {
+    color: $color-custom;
+}
+
+.bg-white {
+    background: #FFF !important;
+}
+
+.bg-black {
+    background: #4a4a4a !important;
+}
+
+.bg-dark {
+    background: #ddd !important;
+}
+
+.bg-custome {
+    background: $color-custom;
+}
+
+.btn {
+    display: block;
+    max-width: 320px;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 999px;
+}
+
+.btn-sm {
+    padding: 11px 18px;
+}
+
+.btn-custome {
+    color: #FFF;
+    background: $color-custom;
+    border-color: $color-custom;
+    &:hover {
+        color: #FFF;
+        background:  $color-btn-custom-hover;
+        border-color: $color-btn-custom-hover;
+    }
+}
+
+.btn-outline-custome {
+    color: #FFF;
+    background: transparent;
+    border-color: #fff;
+    &:hover {
+        color: #ddd;
+        border-color: #ddd;
+    }
+}
+
+section {
+    position: relative;
+}
+
+.dark-overlay {
+    background: #000;
+    opacity: 0.5;
+}
+
+/* - hero - */
+
+.pypl-hero-carousel-item {
+    width: 100%;
+    min-height: 616px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 60% center !important;
+    padding-top: 72px;
+    padding-bottom: 60px;
+    &[data-index='1'] {
+        background: url(../img/hero-carousel/outwin-the-norm-hero-bg-entry.jpg);
+    }
+    &[data-index='2'] {
+        background: url(../img/hero-carousel/man-person-taking-photo-photographer.jpg);
+    }
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}
+
+#pypl-carousel-top .owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    .owl-dot span {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading-responsive {
+        font-size: 60px;
+    }
+    .pypl-hero-carousel-item {
+        min-height: 620px;
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .pypl-hero-carousel-item {
+        min-height: 660px;
+        padding-top: 112px;
+    }
+}
+
+/* - panels - */
+.pypl-panels-item {
+    margin-top: 15px;
+    .panels-item-img {
+        margin: 20px 30px;
+    }
+    .desc {
+        margin-top: 10px;
+    }
+}
+
+/* - steps - */
+
+.steps-circle {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    vertical-align: middle;
+    border: 1px solid #4a4a4a;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.steps-cta {
+    .btn {
+        margin-top: 34px;
+    }
+}
+
+/* - editorial - */
+
+.pypl-editorial-bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &[data-index='1'] {
+        background-image: url(https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/shared/home/optimized/editorial-buyer-protection.jpg);
+    }
+    &[data-index='2'] {
+        background: #FFF;
+    }
+    &[data-index='3'] {
+        background-image: url('https://www.paypalobjects.com/digitalassets/c/website/marketing/apac/shared/home/optimized/editorial-automated-payments-mobile.jpg');
+    }
+    &[data-index='4'] {
+        background-color: #f5f7fa;
+    }
+}
+
+.pypl-editorial-content {
+    position: relative;
+    padding: 40px 0;
+    .editorial-desc {
+        margin-top: 25px;
+    }
+    .editorial-link {
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+
+
+/* - footer - */
+
+.footer-content {
+    padding: 40px 0;
+    font-size: 13px;
+    text-align: center;
+    p {
+        font-size: 13px;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+            display: inline-block;
+            padding-right: 10px;
+            a {
+                color: #4a4a4a;
+            }
+        }
+    }
+    .footer-header {
+        flex-direction: column-reverse;
+    }
+}
+
+.footer-nav, .footer-laguage {
+    a {
+        font-size: 15px;
+        color: #000 !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-content {
+        text-align: left;
+
+    .footer-header {
+        flex-direction: row;
+    }
+    }
+    .footer-corrlinks, .footer-nav {
+        text-align: left;
+    }
+    .footer-copyright, .footer-laguage {
+        text-align: right;
+    }
+}
