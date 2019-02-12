@@ -3,7 +3,9 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         items:1,
-        autoplay:false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
     });
 
     //////
